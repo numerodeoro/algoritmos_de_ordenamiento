@@ -1,0 +1,6 @@
+# Ignorar archivos Word
+*.docx
+
+# Ignorar archivos temporales de Python
+__pycache__/
+*.pyc
