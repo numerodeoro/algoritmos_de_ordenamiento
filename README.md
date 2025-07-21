@@ -66,4 +66,26 @@ El archivo `resultados_tester.csv` incluye las siguientes columnas:
 ```bash
 python tester.py
 
+Esto generará un archivo resultados_tester.csv con todos los tiempos registrados.
 
+## ⚠️ Nota:
+
+para ciertos algoritmos no óptimos o listas muy largas, los tiempos de ejecución pueden ser elevados. Se recomienda probar primero con listas pequeñas si se agregan nuevos algoritmos.
+
+📈 Próximos pasos
+Análisis comparativo de resultados (gráficos)
+
+Mejora de la eficiencia en algoritmos propios
+
+Inclusión de pruebas estadísticas (varianza, distribución de tiempos)
+
+Interfaz visual para ejecución del tester
+
+🧠 Observaciones
+El algoritmo catSort_flat() mostró un rendimiento notable cuando se trabaja con listas de baja cardinalidad (pocas categorías).
+
+sorted() de Python sirve como línea de base, pero los algoritmos personalizados permiten experimentar y entender el comportamiento con distintos tipos de entrada.
+
+Desarrollado por:
+María Marta Torres
+Con ayuda de ideas, sueños con Fourier y testers cinematográficos 😄
