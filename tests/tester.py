@@ -65,15 +65,4 @@ def tester(algoritmos=[sorted],
                     writer.writerow([semilla, algoritmo.__name__, 'Aleatoria', param[0], param[2], round(tiempo,decimales)])
                 elif len(param) == 3:
                     writer.writerow([semilla,algoritmo.__name__, 'Casi ordenada', param[0], param[1]/param[0], round(tiempo,decimales)])
-tester(algoritmos=[catSort_flat],
-    min_long=100,
-    max_long=200, 
-    inc_long = 50, 
-    min_desorden=0.1,
-    max_desorden=0.1,
-    inc_desorden=0.3,
-    min_cat=3,
-    max_cat=13,
-    inc_cat=5,
-    semilla=100, 
-    decimales=2)
+
