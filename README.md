@@ -63,8 +63,7 @@ El archivo `resultados_tester.csv` incluye las siguientes columnas:
 
 ## 🚀 Cómo ejecutar el tester
 
-```bash
-python tester.py
+
 
 Esto generará un archivo resultados_tester.csv con todos los tiempos registrados.
 
