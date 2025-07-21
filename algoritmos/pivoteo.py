@@ -1,4 +1,6 @@
-
+# archivo: pivoteo.py
+# autor: María Marta Torres
+# descripción: mi versión del algoritmo QuickSort. Tomo como pivote la media aritmética
     
 def pivotear(lista):
     if len(lista)<=1:

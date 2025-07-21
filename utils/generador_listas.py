@@ -1,3 +1,6 @@
+# archivo: generador_listas.py
+# autor: María Marta Torres
+# descripción: algoritmo para generar listas de distintos tipos para ser usadas en los tests de algoritmos
 import random
 def generar_lista_aleatoria(longitud=10000, minimo=0, maximo=20, semilla=100):
     random.seed(semilla)

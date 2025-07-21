@@ -1,3 +1,6 @@
+# archivo: catSort_table.py
+# autor: María Marta Torres
+# descripción: extensión del algoritmo catSort_flat para listas de listas (ideal para ordenamiento por alguna variable categórica en una base de datos)
 def catSort_table(lista, indice):
     """
     Ordena una lista de listas agrupando los elementos por categoría según el índice requerido,

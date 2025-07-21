@@ -1,4 +1,6 @@
-
+# archivo: insertion.py
+# autor: María Marta Torres
+# descripción: ordenamiento insertion clásico
 def ordenar(lista):
     for i in range(1,len(lista)):
         aux=lista[i]

@@ -1,3 +1,6 @@
+# archivo: catSort_flat.py
+# autor: María Marta Torres
+# descripción: algoritmo inventado por la autora. Muy bueno para listas mixtas con pocos valores distintos y mucha longitud.
 def catSort_flat(lista):
     """
     Ordena una lista agrupando los elementos por categoría,

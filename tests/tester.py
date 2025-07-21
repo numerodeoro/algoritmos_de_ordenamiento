@@ -1,10 +1,13 @@
+# tester.py
+# Autor: María Marta Torres
+# Banco de pruebas para algoritmos de ordenamiento: mide eficiencia en listas aleatorias y casi ordenadas.
 import time
-from bubble import bubble
-from catSort_flat import catSort_flat
-from insertion import ordenar
-from selection import selec_sort
-from pivoteo import pivotear
-from generador_listas import generar_lista_aleatoria, generar_lista_casi_ordenada
+from algoritmos.bubble import bubble
+from algoritmos.catSort_flat import catSort_flat
+from algoritmos.insertion import ordenar
+from algoritmos.selection import selec_sort
+from algoritmos.pivoteo import pivotear
+from utils.generador_listas import generar_lista_aleatoria, generar_lista_casi_ordenada
 
 def test_eficiencia(algoritmo,lista):
     inicio = time.time()

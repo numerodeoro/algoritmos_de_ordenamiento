@@ -1,4 +1,6 @@
-
+# archivo: selection.py
+# autor: María Marta Torres
+# descripción: algoritmo selection_sort
 def selec_sort(lista):
     """
     Ordena una lista en forma ascendente usando Selection Sort.
