@@ -62,29 +62,26 @@ El archivo `resultados_tester.csv` incluye las siguientes columnas:
 - `Tiempo` (en segundos)
 
 ## 🚀 Cómo ejecutar el tester
+* Puede ejecutarse un *test de performance* para un solo algoritmo y lista con la función **test_eficiencia(algoritmo,lista)**
+* También (recomendable), puede ejecutarse un *banco completo de pruebas* con distintos tipos de listas con la función **tester()**, esta última tiene argumentos personalizables para generar listas diferentes, pero se puede usar con valores configurados por defecto, todos los argumentos son opcionales para mayor facilidad de uso. Esto generará un archivo "resultados_tester.csv", con todos los tiempos registrados.
 
-
-
-Esto generará un archivo resultados_tester.csv con todos los tiempos registrados.
-
-## ⚠️ Nota:
-
+### ⚠️ Nota:
 para ciertos algoritmos no óptimos o listas muy largas, los tiempos de ejecución pueden ser elevados. Se recomienda probar primero con listas pequeñas si se agregan nuevos algoritmos.
 
-📈 Próximos pasos
-Análisis comparativo de resultados (gráficos)
+## 📈 Próximos pasos
+### Análisis comparativo de resultados (gráficos)
 
-Mejora de la eficiencia en algoritmos propios
+### Mejora de la eficiencia en algoritmos propios
 
-Inclusión de pruebas estadísticas (varianza, distribución de tiempos)
+### Inclusión de pruebas estadísticas (varianza, distribución de tiempos)
 
-Interfaz visual para ejecución del tester
+### Interfaz visual para ejecución del tester
 
-🧠 Observaciones
+## 🧠 Observaciones
 El algoritmo catSort_flat() mostró un rendimiento notable cuando se trabaja con listas de baja cardinalidad (pocas categorías).
 
 sorted() de Python sirve como línea de base, pero los algoritmos personalizados permiten experimentar y entender el comportamiento con distintos tipos de entrada.
 
 Desarrollado por:
 María Marta Torres
-Con ayuda de ideas, sueños con Fourier y testers cinematográficos 😄
+Con ayuda de ideas, sueños de ordenamientos y testers cinematográficos 😄
