@@ -1,9 +1,13 @@
-# Comparación de Algoritmos de Ordenamiento
+# <img width="512" height="512" alt="image" src="https://github.com/user-attachments/assets/bce9f021-e7c5-40c4-8077-3a525c7c0c81" />
+Comparación de Algoritmos de Ordenamiento
 
-Este proyecto tiene como objetivo evaluar el desempeño de distintos algoritmos de ordenamiento sobre listas de diferentes características. Se implementó un sistema de testing automatizado que permite comparar los tiempos de ejecución en función del tamaño de las listas, el grado de desorden y la cantidad de categorías posibles en sus elementos.
+Este proyecto tiene como objetivo evaluar el desempeño de distintos algoritmos de ordenamiento sobre listas de diferentes características. Se diseñó un sistema de testing automatizado que permite comparar los tiempos de ejecución en función del tamaño de las listas, el grado de desorden y la cantidad de categorías posibles en sus elementos.
+Nació con la idea de repasar algoritmos de ordenamientos ya existentes y terminó desembocando en algunas variantes propias de los ordenamientos (*catSort*, inspirando en el counting aunque con varios cambios y *pivotear*, casi calcado del quick sort, pero con cambio de pivote y ligeramente distinta metodología en la partición) y en el desarrollo de un tester personalizado de los algoritmos.
 
 ## 📂 Estructura del Proyecto
 ├── algoritmos/
+
+│   ├── __init__.py
 
 │   ├── bubble.py
 
@@ -17,11 +21,19 @@ Este proyecto tiene como objetivo evaluar el desempeño de distintos algoritmos 
 
 ├── utils/
 
+│   ├── __init__.py
+
 │   └── generador_listas.py
 
 ├── tests/
 
+│   ├── __init__.py
+
 │   └── tester.py
+
+├── tester.py
+
+├── resultados.csv
 
 ├── README.md
 
@@ -45,13 +57,13 @@ Las listas pueden ser:
 - **Casi ordenadas**: con cierto porcentaje de elementos desordenados.
 
 Parámetros configurables:
-- Longitudes de las listas (desde 10,000 hasta 1,000,000 por defecto)
-- Variación incrementa en la longitud (por defecto es 495000)
-- Porcentaje de desorden (por defecto, 0.1, 0.4, 0.7)
+- Longitudes de las listas mínima y máxima (desde 10,000 hasta 1,000,000 por defecto)
+- Variación incremental en la longitud (por defecto es 495000)
+- Porcentaje de desorden mínimo y máximo (por defecto desde 0.1 hasta 0.7)
 - variación incremental del porcentaje de desorden (por defecto es 0.3)
-- Cantidad de categorías (por defecto, 5 y 25)
-- variación incremental en la cantidad de categorías(por defecto es seed=100)
-- Semilla para garantizar reproducibilidad
+- Cantidad de categorías mínima y máxima (por defecto, 5 y 25)
+- variación incremental en la cantidad de categorías (por defecto es 10)
+- Semilla para garantizar reproducibilidad (por defecto es seed=100)
 
 ### 🧮 Formato del CSV generado
 
