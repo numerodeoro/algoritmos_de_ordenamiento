@@ -27,6 +27,8 @@ Este proyecto tiene como objetivo evaluar el desempeño de distintos algoritmos 
 
 └── .gitignore
 
+<pre> ```plaintext ├── algoritmos/ │ ├── bubble.py │ ├── insertion.py │ ├── selection.py │ ├── pivoteo.py │ └── catSort_flat.py ├── utils/ │ └── generador_listas.py ├── tests/ │ └── tester.py ├── README.md └── .gitignore ``` </pre>
+
 
 ## ⚙️ Algoritmos Incluidos
 
