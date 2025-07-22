@@ -27,17 +27,15 @@ Este proyecto tiene como objetivo evaluar el desempeño de distintos algoritmos 
 
 └── .gitignore
 
- ```plaintext ├── algoritmos/ │ ├── bubble.py │ ├── insertion.py │ ├── selection.py │ ├── pivoteo.py │ └── catSort_flat.py ├── utils/ │ └── generador_listas.py ├── tests/ │ └── tester.py ├── README.md └── .gitignore ``` 
 
 
 ## ⚙️ Algoritmos Incluidos
 
-- `sorted()` de Python (referencia base)
 - `bubble()` (burbuja)
 - `ordenar()` (inserción)
 - `selec_sort()` (selección)
-- `pivotear()` (propio, basado en un pivote)
-- `catSort_flat()` (ordenamiento optimizado para listas con pocas categorías)
+- `pivotear()` (versión del quick sort con pivote personalizado)
+- `catSort_flat()` (ordenamiento optimizado para listas con pocas categorías, versión muy libre del counting sort, ver el README de ordenamientos catSort)
 
 ## 🧪 Funcionalidad del Tester
 
@@ -47,9 +45,12 @@ Las listas pueden ser:
 - **Casi ordenadas**: con cierto porcentaje de elementos desordenados.
 
 Parámetros configurables:
-- Longitudes de las listas (desde 10,000 hasta 1,000,000)
-- Porcentaje de desorden (por ejemplo, 0.1, 0.4, 0.7)
-- Cantidad de categorías (por ejemplo, 5, 25)
+- Longitudes de las listas (desde 10,000 hasta 1,000,000 por defecto)
+- Variación incrementa en la longitud (por defecto es 495000)
+- Porcentaje de desorden (por defecto, 0.1, 0.4, 0.7)
+- variación incremental del porcentaje de desorden (por defecto es 0.3)
+- Cantidad de categorías (por defecto, 5 y 25)
+- variación incremental en la cantidad de categorías(por defecto es seed=100)
 - Semilla para garantizar reproducibilidad
 
 ### 🧮 Formato del CSV generado
