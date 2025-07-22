@@ -1,4 +1,4 @@
-# <img width="60" height="60" alt="image" src="https://github.com/user-attachments/assets/bce9f021-e7c5-40c4-8077-3a525c7c0c81" /> Comparación de Algoritmos de Ordenamiento
+# <img width="60" height="60" alt="image" src="https://github.com/user-attachments/assets/bce9f021-e7c5-40c4-8077-3a525c7c0c81" />        Comparación de Algoritmos de Ordenamiento
 
 Este proyecto tiene como objetivo evaluar el desempeño de distintos algoritmos de ordenamiento sobre listas de diferentes características. Se diseñó un sistema de testing automatizado que permite comparar los tiempos de ejecución en función del tamaño de las listas, el grado de desorden y la cantidad de categorías posibles en sus elementos.
 Nació con la idea de repasar algoritmos de ordenamientos ya existentes y terminó desembocando en algunas variantes propias de los ordenamientos (*catSort*, inspirando en el counting aunque con varios cambios y *pivotear*, casi calcado del quick sort, pero con cambio de pivote y ligeramente distinta metodología en la partición) y en el desarrollo de un tester personalizado de los algoritmos.
