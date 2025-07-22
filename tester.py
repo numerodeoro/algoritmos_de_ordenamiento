@@ -3,6 +3,8 @@
 # Banco de pruebas para algoritmos de ordenamiento: mide eficiencia en listas aleatorias y casi ordenadas.
 import time
 import csv
+import os
+from datetime import datetime
 from algoritmos.bubble import bubble
 from algoritmos.catSort_flat import catSort_flat
 from algoritmos.insertion import ordenar
@@ -58,7 +60,13 @@ def tester(algoritmos=[sorted],
             lista=generar_lista_casi_ordenada(longitud,int(desorden*longitud),semilla)
             listas.append(lista)
             parametros.append([longitud,int(desorden*longitud),semilla])
-    with open('resultados_tester.csv', 'w', newline='') as archivo:
+
+    timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+    nombre_archivo = f"resultados_tester_semilla{semilla}_{timestamp}.csv"
+
+    ruta_archivo = os.path.join(os.getcwd(), nombre_archivo)
+
+    with open(ruta_archivo, 'w', newline='') as archivo:
         writer = csv.writer(archivo)
         writer.writerow(['Semilla','Algoritmo', 'Tipo de lista', 'Longitud', 'Categorías o Proporción desorden', 'Tiempo'])
     
@@ -84,5 +92,5 @@ tester(algoritmos=[catSort_flat],
     min_cat=5,
     max_cat=10,
     inc_cat=5,
-    semilla=500,
+    semilla=320,
     decimales=10)

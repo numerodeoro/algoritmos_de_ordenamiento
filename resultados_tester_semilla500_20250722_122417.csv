@@ -1,0 +1,10 @@
+Semilla,Algoritmo,Tipo de lista,Longitud,Categorías o Proporción desorden,Tiempo
+500,catSort_flat,Aleatoria,1000,5,0.0
+500,catSort_flat,Aleatoria,1000,10,0.0010011196
+500,catSort_flat,Casi ordenada,1000,0.1,0.0060060024
+500,catSort_flat,Aleatoria,1050,5,5.81741e-05
+500,catSort_flat,Aleatoria,1050,10,0.0
+500,catSort_flat,Casi ordenada,1050,0.1,0.0050041676
+500,catSort_flat,Aleatoria,1100,5,0.0010018349
+500,catSort_flat,Aleatoria,1100,10,0.0
+500,catSort_flat,Casi ordenada,1100,0.1,0.0070059299

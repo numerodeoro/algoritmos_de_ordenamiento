@@ -3,6 +3,8 @@
 # Banco de pruebas para algoritmos de ordenamiento: mide eficiencia en listas aleatorias y casi ordenadas.
 import time
 import csv
+import os
+from datetime import datetime
 from algoritmos.bubble import bubble
 from algoritmos.catSort_flat import catSort_flat
 from algoritmos.insertion import ordenar
@@ -58,19 +60,25 @@ def tester(algoritmos=[sorted],
             lista=generar_lista_casi_ordenada(longitud,int(desorden*longitud),semilla)
             listas.append(lista)
             parametros.append([longitud,int(desorden*longitud),semilla])
-    with open('resultados_tester.csv', 'w', newline='') as archivo:
+    
+    timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+    nombre_archivo = f"resultados_tester_semilla{semilla}_{timestamp}.csv"
+
+    ruta_archivo = os.path.join(os.getcwd(), nombre_archivo)
+
+    with open(ruta_archivo, 'w', newline='') as archivo:
         writer = csv.writer(archivo)
         writer.writerow(['Semilla','Algoritmo', 'Tipo de lista', 'Longitud', 'Categorías o Proporción desorden', 'Tiempo'])
     
         for algoritmo in algoritmos:
-            # print(f"resultados para el algoritmo: {algoritmo.__name__}\n")
-            # print("---------------------------------------")
+            print(f"resultados para el algoritmo: {algoritmo.__name__}\n")
+            print("---------------------------------------")
             for lista, param in zip(listas, parametros):
                 tiempo = test_eficiencia(algoritmo, lista)
                 if len(param) == 4:
-                    # print(f"\ntiempo en lista aleatoria de longitud {param[0]} y cantidad de categorias {param[2]}: {round(tiempo,decimales)}")
+                    print(f"\ntiempo en lista aleatoria de longitud {param[0]} y cantidad de categorias {param[2]}: {round(tiempo,decimales)}")
                     writer.writerow([semilla, algoritmo.__name__, 'Aleatoria', param[0], param[2], round(tiempo,decimales)])
                 elif len(param) == 3:
-                    # print(f"\ntiempo en lista casi ordenada de longitud {param[0]} y proporcion de desorden {param[1]/param[0]}: {round(tiempo,decimales)}")
+                    print(f"\ntiempo en lista casi ordenada de longitud {param[0]} y proporcion de desorden {param[1]/param[0]}: {round(tiempo,decimales)}")
                     writer.writerow([semilla,algoritmo.__name__, 'Casi ordenada', param[0], param[1]/param[0], round(tiempo,decimales)])
 
