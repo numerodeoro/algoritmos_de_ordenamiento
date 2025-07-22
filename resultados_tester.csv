@@ -1,10 +1,10 @@
 Semilla,Algoritmo,Tipo de lista,Longitud,Categorías o Proporción desorden,Tiempo
-200,catSort_flat,Aleatoria,1000,5,0.0
-200,catSort_flat,Aleatoria,1000,10,0.0
-200,catSort_flat,Casi ordenada,1000,0.1,0.01
-200,catSort_flat,Aleatoria,1050,5,0.0
-200,catSort_flat,Aleatoria,1050,10,0.0
-200,catSort_flat,Casi ordenada,1050,0.1,0.0
-200,catSort_flat,Aleatoria,1100,5,0.0
-200,catSort_flat,Aleatoria,1100,10,0.0
-200,catSort_flat,Casi ordenada,1100,0.1,0.0
+500,catSort_flat,Aleatoria,1000,5,0.0010006428
+500,catSort_flat,Aleatoria,1000,10,0.0
+500,catSort_flat,Casi ordenada,1000,0.1,0.0050039291
+500,catSort_flat,Aleatoria,1050,5,0.0
+500,catSort_flat,Aleatoria,1050,10,0.001001358
+500,catSort_flat,Casi ordenada,1050,0.1,0.0060050488
+500,catSort_flat,Aleatoria,1100,5,0.0
+500,catSort_flat,Aleatoria,1100,10,0.0010006428
+500,catSort_flat,Casi ordenada,1100,0.1,0.0060050488

@@ -63,22 +63,14 @@ def tester(algoritmos=[sorted],
         writer.writerow(['Semilla','Algoritmo', 'Tipo de lista', 'Longitud', 'Categorías o Proporción desorden', 'Tiempo'])
     
         for algoritmo in algoritmos:
+            # print(f"resultados para el algoritmo: {algoritmo.__name__}\n")
+            # print("---------------------------------------")
             for lista, param in zip(listas, parametros):
                 tiempo = test_eficiencia(algoritmo, lista)
                 if len(param) == 4:
+                    # print(f"\ntiempo en lista aleatoria de longitud {param[0]} y cantidad de categorias {param[2]}: {round(tiempo,decimales)}")
                     writer.writerow([semilla, algoritmo.__name__, 'Aleatoria', param[0], param[2], round(tiempo,decimales)])
                 elif len(param) == 3:
+                    # print(f"\ntiempo en lista casi ordenada de longitud {param[0]} y proporcion de desorden {param[1]/param[0]}: {round(tiempo,decimales)}")
                     writer.writerow([semilla,algoritmo.__name__, 'Casi ordenada', param[0], param[1]/param[0], round(tiempo,decimales)])
 
-tester(algoritmos=[catSort_flat],
-    min_long=50,
-    max_long=200, 
-    inc_long = 50, 
-    min_desorden=0.1,
-    max_desorden=0.1,
-    inc_desorden=0.3,
-    min_cat=5,
-    max_cat=10,
-    inc_cat=5,
-    semilla=100, 
-    decimales=2)
