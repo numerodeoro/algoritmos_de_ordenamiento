@@ -2,6 +2,7 @@
 # Autor: María Marta Torres
 # Banco de pruebas para algoritmos de ordenamiento: mide eficiencia en listas aleatorias y casi ordenadas.
 import time
+import csv
 from algoritmos.bubble import bubble
 from algoritmos.catSort_flat import catSort_flat
 from algoritmos.insertion import ordenar
@@ -27,7 +28,7 @@ def tester(algoritmos=[sorted],
     inc_cat=20,
     semilla=100, 
     decimales=5):
-    import csv
+    
     longitudes=[]
     longitud=min_long
     while longitud<=max_long:
