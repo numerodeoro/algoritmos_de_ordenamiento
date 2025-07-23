@@ -43,13 +43,13 @@ def tester(algoritmos=[sorted],
     while desorden<=max_desorden:
         desordenes.append(desorden)
         desorden+=inc_desorden
-        
+  
     categorias=[]
     categ=min_cat
     while categ<=max_cat:
         categorias.append(categ)
         categ+=inc_cat
-        
+      
     listas=[]
     parametros=[]
     for longitud in longitudes:
@@ -61,7 +61,7 @@ def tester(algoritmos=[sorted],
             lista=generar_lista_casi_ordenada(longitud,int(desorden*longitud),semilla)
             listas.append(lista)
             parametros.append([longitud,int(desorden*longitud),semilla])
-    
+
     timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
     nombre_archivo = f"resultados_tester_semilla{semilla}_{timestamp}.csv"
     carpeta_resultados = os.path.join(os.getcwd(), "resultados")
@@ -82,6 +82,5 @@ def tester(algoritmos=[sorted],
                     print(f"\ntiempo en lista aleatoria de longitud {param[0]} y cantidad de categorias {param[2]}: {round(tiempo,decimales)}")
                     writer.writerow([semilla, algoritmo.__name__, 'Aleatoria', param[0], param[2], round(tiempo,decimales)])
                 elif len(param) == 3:
-                    print(f"\ntiempo en lista casi ordenada de longitud {param[0]} y proporcion de desorden {param[1]/param[0]}: {round(tiempo,decimales)}")
-                    writer.writerow([semilla,algoritmo.__name__, 'Casi ordenada', param[0], param[1]/param[0], round(tiempo,decimales)])
-
+                    print(f"\ntiempo en lista casi ordenada de longitud {param[0]} y proporcion de desorden {round(param[1]/param[0],decimales)}: {round(tiempo,decimales)}")
+                    writer.writerow([semilla,algoritmo.__name__, 'Casi ordenada', param[0], round(param[1]/param[0],decimales), round(tiempo,decimales)])
