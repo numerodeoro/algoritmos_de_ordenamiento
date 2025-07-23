@@ -56,6 +56,7 @@ Nació con la idea de repasar algoritmos de ordenamientos ya existentes y termin
 - `ordenar()` (inserción)
 - `selec_sort()` (selección)
 - `pivotear()` (versión del quick sort con pivote personalizado)
+- `dividir_unir()` (versión del merge sort)
 - `catSort_flat()` (ordenamiento optimizado para listas con pocas categorías, versión muy libre del counting sort, ver el README de ordenamientos catSort)
 
 ## 🧪 Funcionalidad del Tester
