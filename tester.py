@@ -64,8 +64,10 @@ def tester(algoritmos=[sorted],
 
     timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
     nombre_archivo = f"resultados_tester_semilla{semilla}_{timestamp}.csv"
+    carpeta_resultados = os.path.join(os.getcwd(), "resultados")
+    os.makedirs(carpeta_resultados, exist_ok=True) 
 
-    ruta_archivo = os.path.join(os.getcwd(), nombre_archivo)
+    ruta_archivo = os.path.join(carpeta_resultados, nombre_archivo)
 
     with open(ruta_archivo, 'w', newline='') as archivo:
         writer = csv.writer(archivo)
@@ -77,11 +79,12 @@ def tester(algoritmos=[sorted],
             for lista, param in zip(listas, parametros):
                 tiempo = test_eficiencia(algoritmo, lista)
                 if len(param) == 4:
-                    print(f"\ntiempo en lista aleatoria de longitud {param[0]} y cantidad de categorias {param[2]}: {round(tiempo,decimales)}")    
+                    print(f"\ntiempo en lista aleatoria de longitud {param[0]} y cantidad de categorias {param[2]}: {round(tiempo,decimales)}")
                     writer.writerow([semilla, algoritmo.__name__, 'Aleatoria', param[0], param[2], round(tiempo,decimales)])
                 elif len(param) == 3:
                     print(f"\ntiempo en lista casi ordenada de longitud {param[0]} y proporcion de desorden {param[1]/param[0]}: {round(tiempo,decimales)}")
                     writer.writerow([semilla,algoritmo.__name__, 'Casi ordenada', param[0], param[1]/param[0], round(tiempo,decimales)])
+
 
 tester(algoritmos=[catSort_flat],
     min_long=1000,

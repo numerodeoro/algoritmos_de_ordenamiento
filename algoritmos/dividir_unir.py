@@ -28,8 +28,7 @@ def unir(lista1,lista2):
 
 
 
-lista= [1,3,6,2,4,1,6,8,4,1,0,3,5,8]
-print(dividir_unir(lista))
+
 
 
 

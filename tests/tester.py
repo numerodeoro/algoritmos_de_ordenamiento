@@ -64,8 +64,10 @@ def tester(algoritmos=[sorted],
     
     timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
     nombre_archivo = f"resultados_tester_semilla{semilla}_{timestamp}.csv"
+    carpeta_resultados = os.path.join(os.getcwd(), "resultados")
+    os.makedirs(carpeta_resultados, exist_ok=True) 
 
-    ruta_archivo = os.path.join(os.getcwd(), nombre_archivo)
+    ruta_archivo = os.path.join(carpeta_resultados, nombre_archivo)
 
     with open(ruta_archivo, 'w', newline='') as archivo:
         writer = csv.writer(archivo)
