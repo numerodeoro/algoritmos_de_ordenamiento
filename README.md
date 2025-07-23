@@ -10,19 +10,29 @@ Nació con la idea de repasar algoritmos de ordenamientos ya existentes y termin
 
 │   ├── bubble.py
 
-│   ├── insertion.py
+│   ├── catSort_flat.py
 
-│   ├── selection.py
+│   ├── catSort_table.py
+
+│   ├── dividir_unir.py
+
+│   ├── insertion.py
 
 │   ├── pivoteo.py
 
-│   └── catSort_flat.py
+│   └── selection.py
 
 ├── utils/
 
 │   ├── __init__.py
 
 │   └── generador_listas.py
+
+├── resultados/
+
+│   ├── resultados_tester.csv
+
+│   └── otros archivos .csv
 
 ├── tests/
 
