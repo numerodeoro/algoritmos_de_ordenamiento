@@ -10,6 +10,7 @@ from algoritmos.catSort_flat import catSort_flat
 from algoritmos.insertion import ordenar
 from algoritmos.selection import selec_sort
 from algoritmos.pivoteo import pivotear
+from algoritmos.dividir_unir import dividir_unir
 from utils.generador_listas import generar_lista_aleatoria, generar_lista_casi_ordenada
 
 def test_eficiencia(algoritmo,lista):
