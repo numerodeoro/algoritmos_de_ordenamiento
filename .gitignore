@@ -4,3 +4,4 @@
 # Ignorar archivos temporales de Python
 __pycache__/
 *.pyc
+.vscode/
