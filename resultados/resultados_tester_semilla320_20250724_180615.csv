@@ -1,0 +1,17 @@
+Semilla,Algoritmo,Tipo de lista,Longitud,Categorías o Proporción desorden,Tiempo
+320,pivotear,Aleatoria,100,5,0.0
+320,pivotear,Aleatoria,100,15,0.0
+320,pivotear,Casi ordenada,100,0.1,0.0
+320,pivotear,Casi ordenada,100,0.9,0.0
+320,pivotear,Aleatoria,1100,5,0.0
+320,pivotear,Aleatoria,1100,15,0.001
+320,pivotear,Casi ordenada,1100,0.1,0.001
+320,pivotear,Casi ordenada,1100,0.9,0.002
+320,dividir_unir,Aleatoria,100,5,0.0
+320,dividir_unir,Aleatoria,100,15,0.001
+320,dividir_unir,Casi ordenada,100,0.1,0.0
+320,dividir_unir,Casi ordenada,100,0.9,0.0
+320,dividir_unir,Aleatoria,1100,5,0.002
+320,dividir_unir,Aleatoria,1100,15,0.002
+320,dividir_unir,Casi ordenada,1100,0.1,0.002
+320,dividir_unir,Casi ordenada,1100,0.9,0.003
