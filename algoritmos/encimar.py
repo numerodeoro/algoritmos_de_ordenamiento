@@ -26,36 +26,3 @@ def ordenar_cimas(lista):
 lista=[10,8,8,23,-1,-4,3,2,8,11,9,4,0,2,1, 23,5,1,78,0,-10,31,1,1,1,1,1,0,0,0]
 print(ordenar_cimas(lista))
 
-# aux=lista[10:]
-# lista=encimar(lista[:10],10)+aux
-# print(lista)
-# aux=lista[9:]
-# lista=encimar(lista[:9],9)+aux
-# print(lista)
-# aux=lista[8:]
-# lista=encimar(lista[:8],8)+aux
-# print(lista)
-# aux=lista[7:]
-# lista=encimar(lista[:7],7)+aux
-# print(lista)
-# aux=lista[6:]
-# lista=encimar(lista[:6],6)+aux
-# print(lista)
-# aux=lista[5:]
-# lista=encimar(lista[:5],5)+aux
-# print(lista)
-# aux=lista[4:]
-# lista=encimar(lista[:4],4)+aux
-# print(lista)
-# aux=lista[3:]
-# lista=encimar(lista[:3],3)+aux
-# print(lista)
-# aux=lista[2:]
-# lista=encimar(lista[:2],2)+aux
-# print(lista)
-# aux=lista[1:]
-# lista=encimar(lista[:1],1)+aux
-# print(lista)
-# aux=lista[0:]
-# lista=encimar(lista[:0],0)+aux
-# print(lista)
