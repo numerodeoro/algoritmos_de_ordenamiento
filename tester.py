@@ -11,6 +11,7 @@ from algoritmos.insertion import ordenar
 from algoritmos.selection import selec_sort
 from algoritmos.pivoteo import pivotear
 from algoritmos.dividir_unir import dividir_unir
+from algoritmos.encimar import ordenar_cimas
 from utils.generador_listas import generar_lista_aleatoria, generar_lista_casi_ordenada
 
 def test_eficiencia(algoritmo,lista):
@@ -86,7 +87,7 @@ def tester(algoritmos=[sorted],
                     writer.writerow([semilla,algoritmo.__name__, 'Casi ordenada', param[0], round(param[1]/param[0],decimales), round(tiempo,decimales)])
 
 
-tester(algoritmos=[pivotear,dividir_unir],
+tester(algoritmos=[pivotear,dividir_unir, ordenar_cimas],
     min_long=100,
     max_long=1100,
     inc_long = 1000,
