@@ -3,7 +3,6 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import os
 
-# nombre_archivo = "resultados_tester_semilla320_20250723_145401.csv"
 nombre_archivo = "resultados_tester_semilla320_20250723_151213.csv"
 ruta_archivo = os.path.join(".", "resultados", nombre_archivo)
 # probar con distintos separadores y encodings si no abre bien, el sniffer.csv no se lleva bien con pandas
