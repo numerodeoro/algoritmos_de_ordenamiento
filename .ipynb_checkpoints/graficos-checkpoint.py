@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import os
 
-nombre_archivo = "resultados_tester_semilla320_20250801_200354.csv"
+nombre_archivo = "resultados_tester_semilla320_20250723_151213.csv"
 ruta_archivo = os.path.join(".", "resultados", nombre_archivo)
 # probar con distintos separadores y encodings si no abre bien, el sniffer.csv no se lleva bien con pandas
 df = pd.read_csv(ruta_archivo, encoding='latin1', sep = ",")
@@ -18,13 +18,13 @@ def graficar_por_tipo(df, tipo_lista):
     #revisar el código de la gráfica d las listas casi ordenadas
     df_filtrado = df[df['Tipo de lista'] == tipo_lista].copy().reset_index(drop=True)
 
-    print(f"Tipo de lista: {tipo_lista}")
-    print("Tipos de datos:")
-    print(df_filtrado.dtypes)
-    print("Valores únicos Longitud:", df_filtrado["Longitud"].unique())
-    print("Valores únicos Tiempo:", df_filtrado["Tiempo"].unique())
-    print("Primeras filas:")
-    print(df_filtrado.head())
+    # print(f"Tipo de lista: {tipo_lista}")
+    # print("Tipos de datos:")
+    # print(df_filtrado.dtypes)
+    # print("Valores únicos Longitud:", df_filtrado["Longitud"].unique())
+    # print("Valores únicos Tiempo:", df_filtrado["Tiempo"].unique())
+    # print("Primeras filas:")
+    # print(df_filtrado.head())
 
     if tipo_lista == "Aleatoria":
         categorias_unicas = df_filtrado["Categorías o Proporción desorden"].unique()
@@ -60,7 +60,9 @@ def graficar_por_tipo(df, tipo_lista):
             plt.close()
 
     else:
-
+        print("FILTRADO:")
+        print(df_filtrado[["Longitud", "Tiempo", "Algoritmo"]].head(10))
+        print(df_filtrado.dtypes)
         plt.figure(figsize=(12, 7))
         sns.set(style="whitegrid", palette="colorblind", font_scale=1.2)
 

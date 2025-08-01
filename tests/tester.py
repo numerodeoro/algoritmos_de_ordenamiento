@@ -24,9 +24,9 @@ def tester(algoritmos=[sorted],
     min_long=10000,
     max_long=1000000, 
     inc_long = 495000, 
-    min_desorden=0.1,
-    max_desorden=0.7,
-    inc_desorden=0.3,
+    min_desorden=10,
+    max_desorden=70,
+    inc_desorden=30,
     min_cat=5,
     max_cat=25,
     inc_cat=20,
@@ -59,9 +59,9 @@ def tester(algoritmos=[sorted],
             listas.append(lista)
             parametros.append([longitud,0,categ,semilla])
         for desorden in desordenes:
-            lista=generar_lista_casi_ordenada(longitud,int(desorden*longitud),semilla)
+            lista=generar_lista_casi_ordenada(longitud,int(desorden/100*longitud),semilla)
             listas.append(lista)
-            parametros.append([longitud,int(desorden*longitud),semilla])
+            parametros.append([longitud,int(desorden/100*longitud),semilla])
 
     timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
     nombre_archivo = f"resultados_tester_semilla{semilla}_{timestamp}.csv"
@@ -83,5 +83,6 @@ def tester(algoritmos=[sorted],
                     print(f"\ntiempo en lista aleatoria de longitud {param[0]} y cantidad de categorias {param[2]}: {round(tiempo,decimales)}")
                     writer.writerow([semilla, algoritmo.__name__, 'Aleatoria', param[0], param[2], round(tiempo,decimales)])
                 elif len(param) == 3:
-                    print(f"\ntiempo en lista casi ordenada de longitud {param[0]} y proporcion de desorden {round(param[1]/param[0],decimales)}: {round(tiempo,decimales)}")
-                    writer.writerow([semilla,algoritmo.__name__, 'Casi ordenada', param[0], round(param[1]/param[0],decimales), round(tiempo,decimales)])
+                    print(f"\ntiempo en lista casi ordenada de longitud {param[0]} y proporcion de desorden {int(param[1]/param[0]*100)}: {round(tiempo,decimales)}")
+                    writer.writerow([semilla,algoritmo.__name__, 'Casi ordenada', param[0], int(param[1]/param[0]*100), round(tiempo,decimales)])
+
