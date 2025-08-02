@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import os
 
-nombre_archivo = "resultados_tester_semilla320_20250801_200354.csv"
+nombre_archivo = "resultados_tester_semilla576_20250802_130213.csv"
 ruta_archivo = os.path.join(".", "resultados", nombre_archivo)
 # probar con distintos separadores y encodings si no abre bien, el sniffer.csv no se lleva bien con pandas
 df = pd.read_csv(ruta_archivo, encoding='latin1', sep = ",")
@@ -60,36 +60,41 @@ def graficar_por_tipo(df, tipo_lista):
             plt.close()
 
     else:
+        porcentajes_unicos = df_filtrado["Categorías o Proporción desorden"].unique()
 
-        plt.figure(figsize=(12, 7))
-        sns.set(style="whitegrid", palette="colorblind", font_scale=1.2)
+        for porcentaje in porcentajes_unicos:
+            sub_df = df_filtrado[df_filtrado["Categorías o Proporción desorden"] == porcentaje]
 
-        ax = sns.lineplot(
-            data=df_filtrado,
-            # data=df[df['Tipo de lista'] == "Casi ordenada"],
-            x="Longitud",
-            y="Tiempo",
-            hue="Algoritmo",
-            marker="o",
-            linewidth=2.2
-        )
+            plt.figure(figsize=(12, 7))
+            sns.set(style="whitegrid", palette="colorblind", font_scale=1.2)
 
-        titulo = f"Tiempo por longitud de lista - {tipo_lista}"
-        ax.set_title(titulo, fontsize=16, weight='bold')
-        ax.set_xlabel("Longitud de lista", fontsize=13)
-        ax.set_ylabel("Tiempo (segundos)", fontsize=13)
-        ax.legend(title="Algoritmo", title_fontsize=12, fontsize=11)
+            ax = sns.lineplot(
+                data=sub_df,
+                x="Longitud",
+                y="Tiempo",
+                hue="Algoritmo",
+                marker="o",
+                linewidth=2.2
+            )
 
-        ax.set_xlim(df_filtrado["Longitud"].min(), df_filtrado["Longitud"].max())
-        ax.set_ylim(df_filtrado["Tiempo"].min(), df_filtrado["Tiempo"].max())
+            titulo = f"Tiempo por longitud de lista - {tipo_lista} - {porcentaje}% de desorden"
+            ax.set_title(titulo, fontsize=16, weight='bold')
+            ax.set_xlabel("Longitud de lista", fontsize=13)
+            ax.set_ylabel("Tiempo (segundos)", fontsize=13)
+            ax.legend(title="Algoritmo", title_fontsize=12, fontsize=11)
 
-        plt.tight_layout()
+            ax.set_xlim(df_filtrado["Longitud"].min(), df_filtrado["Longitud"].max())
+            ax.set_ylim(df_filtrado["Tiempo"].min(), df_filtrado["Tiempo"].max())
 
-        nombre_archivo = f"tiempo_vs_longitud_{tipo_lista.replace(' ', '_').lower()}.png"
-        output_path = os.path.join("graficos", nombre_archivo)
-        os.makedirs(os.path.dirname(output_path), exist_ok=True)
+            plt.tight_layout()
 
-        plt.savefig(output_path)
-        plt.close()
+            nombre_archivo = f"tiempo_vs_longitud_{tipo_lista.replace(' ', '_').lower()}_{porcentaje}.png"
+            output_path = os.path.join("graficos", nombre_archivo)
+            os.makedirs(os.path.dirname(output_path), exist_ok=True)
+
+            plt.savefig(output_path)
+            plt.close()
+
+
 for tipo_lista in ["Aleatoria", "Casi ordenada"]:
     graficar_por_tipo(df, tipo_lista)

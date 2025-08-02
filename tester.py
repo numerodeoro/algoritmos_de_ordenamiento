@@ -20,6 +20,13 @@ def test_eficiencia(algoritmo,lista):
     fin = time.time()
     tiempo = fin - inicio
     return tiempo
+
+def custom_round(numero, decimales):
+    redondeado = round(numero, decimales)
+    if redondeado == 0 and numero!= 0:
+        return round(10 ** (-decimales),decimales)
+    return redondeado
+
 def tester(algoritmos=[sorted],
     min_long=10000,
     max_long=1000000, 
@@ -80,21 +87,21 @@ def tester(algoritmos=[sorted],
             for lista, param in zip(listas, parametros):
                 tiempo = test_eficiencia(algoritmo, lista)
                 if len(param) == 4:
-                    print(f"\ntiempo en lista aleatoria de longitud {param[0]} y cantidad de categorias {param[2]}: {round(tiempo,decimales)}")
-                    writer.writerow([semilla, algoritmo.__name__, 'Aleatoria', param[0], param[2], round(tiempo,decimales)])
+                    print(f"\ntiempo en lista aleatoria de longitud {param[0]} y cantidad de categorias {param[2]}: {custom_round(tiempo,decimales)}")
+                    writer.writerow([semilla, algoritmo.__name__, 'Aleatoria', param[0], param[2], custom_round(tiempo,decimales)])
                 elif len(param) == 3:
-                    print(f"\ntiempo en lista casi ordenada de longitud {param[0]} y proporcion de desorden {int(param[1]/param[0]*100)}: {round(tiempo,decimales)}")
-                    writer.writerow([semilla,algoritmo.__name__, 'Casi ordenada', param[0], int(param[1]/param[0]*100), round(tiempo,decimales)])
+                    print(f"\ntiempo en lista casi ordenada de longitud {param[0]} y proporcion de desorden {int(param[1]/param[0]*100)}: {custom_round(tiempo,decimales)}")
+                    writer.writerow([semilla,algoritmo.__name__, 'Casi ordenada', param[0], int(param[1]/param[0]*100), custom_round(tiempo,decimales)])
 
-tester(algoritmos=[pivotear,dividir_unir],
+tester(algoritmos=[catSort_flat ,dividir_unir],
     min_long=100,
     max_long=1100,
-    inc_long = 1000,
+    inc_long = 100,
     min_desorden=10,
     max_desorden=90,
     inc_desorden=10,
     min_cat=5,
     max_cat=15,
-    inc_cat=10,
-    semilla=320,
-    decimales=4)
+    inc_cat=5,
+    semilla=576,
+    decimales=5)

@@ -1,0 +1,265 @@
+Semilla,Algoritmo,Tipo de lista,Longitud,Categorías o Proporción desorden,Tiempo
+576,catSort_flat,Aleatoria,100,5,0.001
+576,catSort_flat,Aleatoria,100,10,0.0
+576,catSort_flat,Aleatoria,100,15,0.0
+576,catSort_flat,Casi ordenada,100,10,0.0
+576,catSort_flat,Casi ordenada,100,20,0.0
+576,catSort_flat,Casi ordenada,100,30,0.0
+576,catSort_flat,Casi ordenada,100,40,0.0
+576,catSort_flat,Casi ordenada,100,50,0.0
+576,catSort_flat,Casi ordenada,100,60,0.0
+576,catSort_flat,Casi ordenada,100,70,0.0
+576,catSort_flat,Casi ordenada,100,80,0.0
+576,catSort_flat,Casi ordenada,100,90,0.0
+576,catSort_flat,Aleatoria,200,5,0.0
+576,catSort_flat,Aleatoria,200,10,0.0
+576,catSort_flat,Aleatoria,200,15,0.001
+576,catSort_flat,Casi ordenada,200,10,0.0
+576,catSort_flat,Casi ordenada,200,20,0.0
+576,catSort_flat,Casi ordenada,200,30,0.001
+576,catSort_flat,Casi ordenada,200,40,0.0
+576,catSort_flat,Casi ordenada,200,50,0.0
+576,catSort_flat,Casi ordenada,200,60,0.0
+576,catSort_flat,Casi ordenada,200,70,0.0
+576,catSort_flat,Casi ordenada,200,80,0.0
+576,catSort_flat,Casi ordenada,200,90,0.0
+576,catSort_flat,Aleatoria,300,5,0.0
+576,catSort_flat,Aleatoria,300,10,0.0
+576,catSort_flat,Aleatoria,300,15,0.0
+576,catSort_flat,Casi ordenada,300,10,0.001
+576,catSort_flat,Casi ordenada,300,20,0.0
+576,catSort_flat,Casi ordenada,300,30,0.001
+576,catSort_flat,Casi ordenada,300,40,0.001
+576,catSort_flat,Casi ordenada,300,50,0.0
+576,catSort_flat,Casi ordenada,300,60,0.0
+576,catSort_flat,Casi ordenada,300,70,0.001
+576,catSort_flat,Casi ordenada,300,80,0.001
+576,catSort_flat,Casi ordenada,300,90,0.0
+576,catSort_flat,Aleatoria,400,5,0.001
+576,catSort_flat,Aleatoria,400,10,0.0
+576,catSort_flat,Aleatoria,400,15,0.0
+576,catSort_flat,Casi ordenada,400,10,0.001
+576,catSort_flat,Casi ordenada,400,20,0.001
+576,catSort_flat,Casi ordenada,400,30,0.001
+576,catSort_flat,Casi ordenada,400,40,0.001
+576,catSort_flat,Casi ordenada,400,50,0.001
+576,catSort_flat,Casi ordenada,400,60,0.001
+576,catSort_flat,Casi ordenada,400,70,0.001
+576,catSort_flat,Casi ordenada,400,80,0.001
+576,catSort_flat,Casi ordenada,400,90,0.001
+576,catSort_flat,Aleatoria,500,5,0.0
+576,catSort_flat,Aleatoria,500,10,0.0
+576,catSort_flat,Aleatoria,500,15,0.001
+576,catSort_flat,Casi ordenada,500,10,0.001
+576,catSort_flat,Casi ordenada,500,20,0.002
+576,catSort_flat,Casi ordenada,500,30,0.002
+576,catSort_flat,Casi ordenada,500,40,0.001
+576,catSort_flat,Casi ordenada,500,50,0.002
+576,catSort_flat,Casi ordenada,500,60,0.002
+576,catSort_flat,Casi ordenada,500,70,0.001
+576,catSort_flat,Casi ordenada,500,80,0.002
+576,catSort_flat,Casi ordenada,500,90,0.002
+576,catSort_flat,Aleatoria,600,5,0.0
+576,catSort_flat,Aleatoria,600,10,0.0
+576,catSort_flat,Aleatoria,600,15,0.0
+576,catSort_flat,Casi ordenada,600,10,0.002
+576,catSort_flat,Casi ordenada,600,20,0.002
+576,catSort_flat,Casi ordenada,600,30,0.002
+576,catSort_flat,Casi ordenada,600,40,0.003
+576,catSort_flat,Casi ordenada,600,50,0.002
+576,catSort_flat,Casi ordenada,600,60,0.002
+576,catSort_flat,Casi ordenada,600,70,0.003
+576,catSort_flat,Casi ordenada,600,80,0.002
+576,catSort_flat,Casi ordenada,600,90,0.002
+576,catSort_flat,Aleatoria,700,5,0.001
+576,catSort_flat,Aleatoria,700,10,0.0
+576,catSort_flat,Aleatoria,700,15,0.0
+576,catSort_flat,Casi ordenada,700,10,0.002
+576,catSort_flat,Casi ordenada,700,20,0.002
+576,catSort_flat,Casi ordenada,700,30,0.003
+576,catSort_flat,Casi ordenada,700,40,0.003
+576,catSort_flat,Casi ordenada,700,50,0.003
+576,catSort_flat,Casi ordenada,700,60,0.003
+576,catSort_flat,Casi ordenada,700,69,0.003
+576,catSort_flat,Casi ordenada,700,80,0.003
+576,catSort_flat,Casi ordenada,700,90,0.003
+576,catSort_flat,Aleatoria,800,5,0.0
+576,catSort_flat,Aleatoria,800,10,0.001
+576,catSort_flat,Aleatoria,800,15,0.0
+576,catSort_flat,Casi ordenada,800,10,0.004
+576,catSort_flat,Casi ordenada,800,20,0.004
+576,catSort_flat,Casi ordenada,800,30,0.004
+576,catSort_flat,Casi ordenada,800,40,0.003
+576,catSort_flat,Casi ordenada,800,50,0.004
+576,catSort_flat,Casi ordenada,800,60,0.004
+576,catSort_flat,Casi ordenada,800,70,0.004
+576,catSort_flat,Casi ordenada,800,80,0.005
+576,catSort_flat,Casi ordenada,800,90,0.004
+576,catSort_flat,Aleatoria,900,5,0.0
+576,catSort_flat,Aleatoria,900,10,0.0
+576,catSort_flat,Aleatoria,900,15,0.001
+576,catSort_flat,Casi ordenada,900,10,0.005
+576,catSort_flat,Casi ordenada,900,20,0.004
+576,catSort_flat,Casi ordenada,900,30,0.004
+576,catSort_flat,Casi ordenada,900,40,0.00501
+576,catSort_flat,Casi ordenada,900,50,0.005
+576,catSort_flat,Casi ordenada,900,60,0.005
+576,catSort_flat,Casi ordenada,900,70,0.00501
+576,catSort_flat,Casi ordenada,900,80,0.005
+576,catSort_flat,Casi ordenada,900,90,0.005
+576,catSort_flat,Aleatoria,1000,5,0.0
+576,catSort_flat,Aleatoria,1000,10,0.001
+576,catSort_flat,Aleatoria,1000,15,0.0
+576,catSort_flat,Casi ordenada,1000,10,0.00501
+576,catSort_flat,Casi ordenada,1000,20,0.006
+576,catSort_flat,Casi ordenada,1000,30,0.005
+576,catSort_flat,Casi ordenada,1000,40,0.00501
+576,catSort_flat,Casi ordenada,1000,50,0.00601
+576,catSort_flat,Casi ordenada,1000,60,0.006
+576,catSort_flat,Casi ordenada,1000,70,0.00601
+576,catSort_flat,Casi ordenada,1000,80,0.00601
+576,catSort_flat,Casi ordenada,1000,90,0.00601
+576,catSort_flat,Aleatoria,1100,5,0.001
+576,catSort_flat,Aleatoria,1100,10,0.0
+576,catSort_flat,Aleatoria,1100,15,0.001
+576,catSort_flat,Casi ordenada,1100,10,0.00601
+576,catSort_flat,Casi ordenada,1100,20,0.00701
+576,catSort_flat,Casi ordenada,1100,30,0.00601
+576,catSort_flat,Casi ordenada,1100,40,0.00601
+576,catSort_flat,Casi ordenada,1100,50,0.00701
+576,catSort_flat,Casi ordenada,1100,60,0.00701
+576,catSort_flat,Casi ordenada,1100,70,0.00701
+576,catSort_flat,Casi ordenada,1100,80,0.00701
+576,catSort_flat,Casi ordenada,1100,90,0.00701
+576,dividir_unir,Aleatoria,100,5,0.0
+576,dividir_unir,Aleatoria,100,10,0.001
+576,dividir_unir,Aleatoria,100,15,0.0
+576,dividir_unir,Casi ordenada,100,10,0.0
+576,dividir_unir,Casi ordenada,100,20,0.0
+576,dividir_unir,Casi ordenada,100,30,0.0
+576,dividir_unir,Casi ordenada,100,40,0.0
+576,dividir_unir,Casi ordenada,100,50,0.0
+576,dividir_unir,Casi ordenada,100,60,0.001
+576,dividir_unir,Casi ordenada,100,70,0.0
+576,dividir_unir,Casi ordenada,100,80,0.0
+576,dividir_unir,Casi ordenada,100,90,0.0
+576,dividir_unir,Aleatoria,200,5,0.0
+576,dividir_unir,Aleatoria,200,10,0.0
+576,dividir_unir,Aleatoria,200,15,0.001
+576,dividir_unir,Casi ordenada,200,10,0.0
+576,dividir_unir,Casi ordenada,200,20,0.001
+576,dividir_unir,Casi ordenada,200,30,0.0
+576,dividir_unir,Casi ordenada,200,40,0.0
+576,dividir_unir,Casi ordenada,200,50,0.0
+576,dividir_unir,Casi ordenada,200,60,0.001
+576,dividir_unir,Casi ordenada,200,70,0.0
+576,dividir_unir,Casi ordenada,200,80,0.0
+576,dividir_unir,Casi ordenada,200,90,0.0
+576,dividir_unir,Aleatoria,300,5,0.001
+576,dividir_unir,Aleatoria,300,10,0.0
+576,dividir_unir,Aleatoria,300,15,0.001
+576,dividir_unir,Casi ordenada,300,10,0.0
+576,dividir_unir,Casi ordenada,300,20,0.0
+576,dividir_unir,Casi ordenada,300,30,0.001
+576,dividir_unir,Casi ordenada,300,40,0.0
+576,dividir_unir,Casi ordenada,300,50,0.0
+576,dividir_unir,Casi ordenada,300,60,0.001
+576,dividir_unir,Casi ordenada,300,70,0.001
+576,dividir_unir,Casi ordenada,300,80,0.0
+576,dividir_unir,Casi ordenada,300,90,0.001
+576,dividir_unir,Aleatoria,400,5,0.001
+576,dividir_unir,Aleatoria,400,10,0.0
+576,dividir_unir,Aleatoria,400,15,0.0
+576,dividir_unir,Casi ordenada,400,10,0.001
+576,dividir_unir,Casi ordenada,400,20,0.001
+576,dividir_unir,Casi ordenada,400,30,0.001
+576,dividir_unir,Casi ordenada,400,40,0.001
+576,dividir_unir,Casi ordenada,400,50,0.001
+576,dividir_unir,Casi ordenada,400,60,0.0
+576,dividir_unir,Casi ordenada,400,70,0.0
+576,dividir_unir,Casi ordenada,400,80,0.001
+576,dividir_unir,Casi ordenada,400,90,0.001
+576,dividir_unir,Aleatoria,500,5,0.001
+576,dividir_unir,Aleatoria,500,10,0.001
+576,dividir_unir,Aleatoria,500,15,0.001
+576,dividir_unir,Casi ordenada,500,10,0.001
+576,dividir_unir,Casi ordenada,500,20,0.001
+576,dividir_unir,Casi ordenada,500,30,0.001
+576,dividir_unir,Casi ordenada,500,40,0.001
+576,dividir_unir,Casi ordenada,500,50,0.001
+576,dividir_unir,Casi ordenada,500,60,0.001
+576,dividir_unir,Casi ordenada,500,70,0.001
+576,dividir_unir,Casi ordenada,500,80,0.001
+576,dividir_unir,Casi ordenada,500,90,0.001
+576,dividir_unir,Aleatoria,600,5,0.001
+576,dividir_unir,Aleatoria,600,10,0.001
+576,dividir_unir,Aleatoria,600,15,0.001
+576,dividir_unir,Casi ordenada,600,10,0.001
+576,dividir_unir,Casi ordenada,600,20,0.001
+576,dividir_unir,Casi ordenada,600,30,0.001
+576,dividir_unir,Casi ordenada,600,40,0.001
+576,dividir_unir,Casi ordenada,600,50,0.001
+576,dividir_unir,Casi ordenada,600,60,0.001
+576,dividir_unir,Casi ordenada,600,70,0.001
+576,dividir_unir,Casi ordenada,600,80,0.001
+576,dividir_unir,Casi ordenada,600,90,0.001
+576,dividir_unir,Aleatoria,700,5,0.002
+576,dividir_unir,Aleatoria,700,10,0.003
+576,dividir_unir,Aleatoria,700,15,0.001
+576,dividir_unir,Casi ordenada,700,10,0.001
+576,dividir_unir,Casi ordenada,700,20,0.003
+576,dividir_unir,Casi ordenada,700,30,0.001
+576,dividir_unir,Casi ordenada,700,40,0.001
+576,dividir_unir,Casi ordenada,700,50,0.002
+576,dividir_unir,Casi ordenada,700,60,0.002
+576,dividir_unir,Casi ordenada,700,69,0.002
+576,dividir_unir,Casi ordenada,700,80,0.001
+576,dividir_unir,Casi ordenada,700,90,0.002
+576,dividir_unir,Aleatoria,800,5,0.002
+576,dividir_unir,Aleatoria,800,10,0.003
+576,dividir_unir,Aleatoria,800,15,0.002
+576,dividir_unir,Casi ordenada,800,10,0.002
+576,dividir_unir,Casi ordenada,800,20,0.002
+576,dividir_unir,Casi ordenada,800,30,0.001
+576,dividir_unir,Casi ordenada,800,40,0.002
+576,dividir_unir,Casi ordenada,800,50,0.002
+576,dividir_unir,Casi ordenada,800,60,0.002
+576,dividir_unir,Casi ordenada,800,70,0.002
+576,dividir_unir,Casi ordenada,800,80,0.002
+576,dividir_unir,Casi ordenada,800,90,0.002
+576,dividir_unir,Aleatoria,900,5,0.001
+576,dividir_unir,Aleatoria,900,10,0.002
+576,dividir_unir,Aleatoria,900,15,0.001
+576,dividir_unir,Casi ordenada,900,10,0.001
+576,dividir_unir,Casi ordenada,900,20,0.002
+576,dividir_unir,Casi ordenada,900,30,0.002
+576,dividir_unir,Casi ordenada,900,40,0.002
+576,dividir_unir,Casi ordenada,900,50,0.002
+576,dividir_unir,Casi ordenada,900,60,0.002
+576,dividir_unir,Casi ordenada,900,70,0.002
+576,dividir_unir,Casi ordenada,900,80,0.002
+576,dividir_unir,Casi ordenada,900,90,0.002
+576,dividir_unir,Aleatoria,1000,5,0.002
+576,dividir_unir,Aleatoria,1000,10,0.002
+576,dividir_unir,Aleatoria,1000,15,0.002
+576,dividir_unir,Casi ordenada,1000,10,0.002
+576,dividir_unir,Casi ordenada,1000,20,0.002
+576,dividir_unir,Casi ordenada,1000,30,0.002
+576,dividir_unir,Casi ordenada,1000,40,0.002
+576,dividir_unir,Casi ordenada,1000,50,0.002
+576,dividir_unir,Casi ordenada,1000,60,0.002
+576,dividir_unir,Casi ordenada,1000,70,0.002
+576,dividir_unir,Casi ordenada,1000,80,0.002
+576,dividir_unir,Casi ordenada,1000,90,0.002
+576,dividir_unir,Aleatoria,1100,5,0.002
+576,dividir_unir,Aleatoria,1100,10,0.003
+576,dividir_unir,Aleatoria,1100,15,0.002
+576,dividir_unir,Casi ordenada,1100,10,0.002
+576,dividir_unir,Casi ordenada,1100,20,0.002
+576,dividir_unir,Casi ordenada,1100,30,0.003
+576,dividir_unir,Casi ordenada,1100,40,0.002
+576,dividir_unir,Casi ordenada,1100,50,0.003
+576,dividir_unir,Casi ordenada,1100,60,0.002
+576,dividir_unir,Casi ordenada,1100,70,0.002
+576,dividir_unir,Casi ordenada,1100,80,0.003
+576,dividir_unir,Casi ordenada,1100,90,0.003
